@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +18,247 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+.App{
+  height: 100vh;
+}
+
+.main{
+  height: calc(100vh - 200px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+}
+
+.sidebar{
+  background-color: #f6f7f9;
+  overflow-y: scroll;
+  border-bottom-right-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+html .sidebar::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+
+}
+
+html .sidebar::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
+html .sidebar::-webkit-scrollbar-thumb{
+  background-color: #dedede;
+  width: 2px;
+}
+html .mainbar::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+
+}
+
+html .mainbar::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
+html .mainbar::-webkit-scrollbar-thumb{
+  background-color: #dedede;
+  width: 2px;
+}
+
+.sidebar ul li{
+  list-style: none;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  
+}
+
+.sidebar ul li:hover{
+  background-color: #ededed;
+}
+
+.sidebar ul li:hover i{
+  left: 0px;
+  
+}
+.sidebar ul li a{
+  text-decoration: none;
+  padding: 15px 10px;
+  display: block;
+  color: #222222;
+  width: 150px;
+
+}
+
+.sidebar ul li i{
+  margin-left: 0px;
+  position: relative;
+  left: -10px;
+  transition: 0.1s ease-in-out;
+  font-size: 0.7rem;
+}
+
+
+
+.mainbar{
+  width: 100%;
+  padding: 20px 20px;
+  overflow-y: scroll;
+}
+
+.mainbar-main-heading{
+  font-family: 'Roboto', sans-serif;
+  color: #0096a1;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  font-size: 2rem;
+  margin: 10px 0px 5px;
+}
+
+.mainbar-main-line{
+  width: 100px;
+  height: 4px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #0096a1;
+}
+
+
+/* //main para */
+
+
+.mainbar-para{
+  margin: 20px 0px 20px;
+  font-family: 'Poppins', sans-serif;
+  max-width: 1100px;
+  font-weight: 500;
+  color: #404756e8;
+  font-size: 1rem;
+}
+
+
+
+.mainbar-para .special{
+  background-color: #eeeeee;
+  border-radius: 3px;
+  margin: 0px 5px;
+  padding: 0px 5px;
+}
+
+.mainbar-para .bold{
+  color: #404756;
+  font-weight: 600;
+}
+
+/* normal  heading  */
+
+.mainbar-h2{
+  margin: 50px 0px 15px;
+  font-family: 'Poppins', sans-serif;
+  max-width: 1100px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #404756e8;
+}
+
+.mainbar-h3{
+  margin: 50px 0px 20px;
+  font-family: 'Poppins', sans-serif;
+  max-width: 1100px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #404756e8;
+}
+
+
+/* normal table  */
+
+.mainbar-table{
+  margin: 40px 0px 30px;
+  max-width: 1100px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  border-collapse: collapse;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.mainbar-table td, .mainbar-table th{
+  border: 1px solid #23272fd6;
+  padding: 12px 15px;
+  font-size: 0.9rem;
+  text-align: left;
+  max-width: 400px;
+}
+
+.mainbar-table th{
+  color: #0096a1;
+  font-weight: 600;
+}
+
+.mainbar-table td{
+  color: #404756e8;
+  font-weight: 500;
+}
+
+tr:nth-child(even) {
+  background-color: #f6f7f9;
+}
+
+
+/* box para  */
+
+.mainbar-box-para{
+  background-color: #f6f7f9;
+  margin: 35px 0px;
+  padding: 20px 30px 30px;
+  font-family: 'Poppins', sans-serif;
+  max-width: 1100px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  border-radius: 8px;
+}
+
+.mainbar-box-para p{
+  font-weight: 500;
+  color: #23272fd6;
+  font-size: 0.9rem;
+  
+}
+
+.mainbar-box-para h2{
+  font-weight: 600;
+  color: #23272fd6;
+  margin: 15px 0px 10px;
+  font-size: 1.1rem;
+  
+}
+
+.mainbar-box-para h3{
+  font-weight: 600;
+  color: #23272fd6;
+  font-size: 1rem;
+  margin: 15px 0px 10px;
+  
+}
+
+.mainbar-box-para ol, .mainbar-box-para ul{
+  padding-left: 25px;
+  margin-top: 10px;
+}
+
+.mainbar-box-para ol li, .mainbar-box-para ul li{
+  margin: 5px 0px;
+  font-size: 0.9rem;
+  color: #0096a1;
+  font-weight: 500
+}
+
+.normal-img{
+  max-width: 700px;
 }
