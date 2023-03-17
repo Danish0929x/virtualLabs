@@ -56,7 +56,7 @@ function App() {
                 
               </li>
               <li>
-                <Link to={ha + "/introduction"}>Workspace</Link>
+                <Link to="https://zaib075x.github.io/Unreal_Labs/c/palindrome/index.html">Workspace</Link>
                 <i class="fas fa-chevron-right"></i>
                 
               </li>
